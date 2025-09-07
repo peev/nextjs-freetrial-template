@@ -70,9 +70,9 @@ export default function Home() {
                   className="w-full h-80 object-cover"
                 />
               </div>
-              <div className="w-full lg:w-1/2 flex flex-col justify-center pl-0 lg:pl-24 pr-0 lg:pr-24">
+              <div className="w-full lg:w-1/2 flex flex-col justify-center pl-0 lg:pl-24 pr-0 lg:pr-24 mt-6 lg:mt-0">
                 <h3 className="text-2xl font-bold text-black mb-6">Set up in minutes</h3>
-                <p className="text-black font-poppins font-light text-xl leading-6" style={{ fontWeight: 300, fontSize: '20px', lineHeight: '25px' }}>
+                <p className="text-black font-poppins font-light text-xl leading-6 mb-10 lg:mb-0" style={{ fontWeight: 300, fontSize: '20px', lineHeight: '25px' }}>
                   Import your links, add products, toggle ads on. No code, no plugins, works on any device.
                 </p>
               </div>
@@ -80,9 +80,9 @@ export default function Home() {
 
             {/* Row 2: Two revenue streams */}
             <div className="flex flex-col lg:flex-row items-center gap-0">
-              <div className="w-full lg:w-1/2 flex flex-col justify-center order-2 lg:order-1 pl-0 lg:pl-24 pr-0 lg:pr-24">
+              <div className="w-full lg:w-1/2 flex flex-col justify-center order-2 lg:order-1 pl-0 lg:pl-24 pr-0 lg:pr-24 mt-6 lg:mt-0">
                 <h3 className="text-2xl font-bold text-black mb-6">Two revenue streams</h3>
-                <p className="text-black font-poppins font-light text-xl leading-6" style={{ fontWeight: 300, fontSize: '20px', lineHeight: '25px' }}>
+                <p className="text-black font-poppins font-light text-xl leading-6 mb-10 lg:mb-0" style={{ fontWeight: 300, fontSize: '20px', lineHeight: '25px' }}>
                   Sell digital products and services — and earn from tasteful, brand-safe ad placements on your page.
                 </p>
               </div>
@@ -108,9 +108,9 @@ export default function Home() {
                   className="w-full h-80 object-cover"
                 />
               </div>
-              <div className="w-full lg:w-1/2 flex flex-col justify-center pl-0 lg:pl-24 pr-0 lg:pr-24">
+              <div className="w-full lg:w-1/2 flex flex-col justify-center pl-0 lg:pl-24 pr-0 lg:pr-24 mt-6 lg:mt-0">
                 <h3 className="text-2xl font-bold text-black mb-6">Control the experience</h3>
-                <p className="text-black font-poppins font-light text-xl leading-6" style={{ fontWeight: 300, fontSize: '20px', lineHeight: '25px' }}>
+                <p className="text-black font-poppins font-light text-xl leading-6 mb-10 lg:mb-0" style={{ fontWeight: 300, fontSize: '20px', lineHeight: '25px' }}>
                   Pick ad categories, placements, and frequency. No pop-ups, no spam. Your brand, your rules.
                 </p>
               </div>
@@ -125,11 +125,10 @@ export default function Home() {
           <h2 className="text-3xl lg:text-4xl font-bold text-center text-black mb-16">
             Benefits for creators
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             <div 
-              className="bg-white p-8"
+              className="bg-white p-8 w-full"
               style={{ 
-                width: '477px',
                 height: '175px',
                 background: '#FFFFFF 0% 0% no-repeat padding-box',
                 boxShadow: '0px 3px 6px #00000029',
@@ -148,9 +147,8 @@ export default function Home() {
               </p>
             </div>
             <div 
-              className="bg-white p-8"
+              className="bg-white p-8 w-full"
               style={{ 
-                width: '477px',
                 height: '175px',
                 background: '#FFFFFF 0% 0% no-repeat padding-box',
                 boxShadow: '0px 3px 6px #00000029',
@@ -169,9 +167,8 @@ export default function Home() {
               </p>
             </div>
             <div 
-              className="bg-white p-8"
+              className="bg-white p-8 w-full"
               style={{ 
-                width: '477px',
                 height: '175px',
                 background: '#FFFFFF 0% 0% no-repeat padding-box',
                 boxShadow: '0px 3px 6px #00000029',
@@ -190,9 +187,8 @@ export default function Home() {
               </p>
             </div>
             <div 
-              className="bg-white p-8"
+              className="bg-white p-8 w-full"
               style={{ 
-                width: '477px',
                 height: '175px',
                 background: '#FFFFFF 0% 0% no-repeat padding-box',
                 boxShadow: '0px 3px 6px #00000029',
@@ -211,9 +207,8 @@ export default function Home() {
               </p>
             </div>
             <div 
-              className="bg-white p-8"
+              className="bg-white p-8 w-full"
               style={{ 
-                width: '477px',
                 height: '175px',
                 background: '#FFFFFF 0% 0% no-repeat padding-box',
                 boxShadow: '0px 3px 6px #00000029',
@@ -232,9 +227,8 @@ export default function Home() {
               </p>
             </div>
             <div 
-              className="bg-white p-8"
+              className="bg-white p-8 w-full"
               style={{ 
-                width: '477px',
                 height: '175px',
                 background: '#FFFFFF 0% 0% no-repeat padding-box',
                 boxShadow: '0px 3px 6px #00000029',
@@ -270,7 +264,7 @@ export default function Home() {
           <h2 className="text-3xl lg:text-4xl font-bold text-center text-black mb-20" style={{ fontFamily: 'Poppins' }}>
             How it works
           </h2>
-          <div className="grid grid-cols-1 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {/* Build your shop - Top Left */}
             <div className="relative">
               <div 
@@ -313,31 +307,31 @@ export default function Home() {
                       Build your shop
                     </h3>
                     <ul className="space-y-1">
-                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '14px', lineHeight: '18px' }}>
+                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '16px', lineHeight: '20px' }}>
                         <svg className="w-3 h-3 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
                         Add digital downloads, courses, memberships, or coaching.
                       </li>
-                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '14px', lineHeight: '18px' }}>
+                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '16px', lineHeight: '20px' }}>
                         <svg className="w-3 h-3 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
                         Customize your page with a visual editor.
                       </li>
-                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '14px', lineHeight: '18px' }}>
+                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '16px', lineHeight: '20px' }}>
                         <svg className="w-3 h-3 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
                         Host files and gated content.
                       </li>
-                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '14px', lineHeight: '18px' }}>
+                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '16px', lineHeight: '20px' }}>
                         <svg className="w-3 h-3 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
                         Built-in checkout & payouts.
                       </li>
-                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '14px', lineHeight: '18px' }}>
+                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '16px', lineHeight: '20px' }}>
                         <svg className="w-3 h-3 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
@@ -350,7 +344,7 @@ export default function Home() {
             </div>
 
             {/* Enable brand placements */}
-            <div className="relative ml-auto">
+            <div className="relative lg:ml-auto">
               <div 
                 className="relative overflow-hidden w-full max-w-2xl mx-auto lg:mx-0"
                 style={{
@@ -391,31 +385,31 @@ export default function Home() {
                       Enable brand placements
                     </h3>
                     <ul className="space-y-1">
-                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '14px', lineHeight: '18px' }}>
+                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '16px', lineHeight: '20px' }}>
                         <svg className="w-3 h-3 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
                         Opt in to tasteful, native ad slots.
                       </li>
-                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '14px', lineHeight: '18px' }}>
+                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '16px', lineHeight: '20px' }}>
                         <svg className="w-3 h-3 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
                         Choose categories that fit your audience and set your preferences.
                       </li>
-                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '14px', lineHeight: '18px' }}>
+                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '16px', lineHeight: '20px' }}>
                         <svg className="w-3 h-3 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
                         Category and brand controls.
                       </li>
-                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '14px', lineHeight: '18px' }}>
+                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '16px', lineHeight: '20px' }}>
                         <svg className="w-3 h-3 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
                         Fixed or revenue-share models.
                       </li>
-                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '14px', lineHeight: '18px' }}>
+                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '16px', lineHeight: '20px' }}>
                         <svg className="w-3 h-3 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
@@ -469,13 +463,13 @@ export default function Home() {
                       Share one link
                     </h3>
                     <ul className="space-y-1">
-                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '14px', lineHeight: '18px' }}>
+                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '16px', lineHeight: '20px' }}>
                         <svg className="w-3 h-3 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
                         Use it in your bio and everywhere else.
                       </li>
-                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '14px', lineHeight: '18px' }}>
+                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '16px', lineHeight: '20px' }}>
                         <svg className="w-3 h-3 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
@@ -488,7 +482,7 @@ export default function Home() {
             </div>
 
             {/* Get paid */}
-            <div className="relative ml-auto">
+            <div className="relative lg:ml-auto">
               <div 
                 className="relative overflow-hidden w-full max-w-2xl mx-auto lg:mx-0"
                 style={{
@@ -529,13 +523,13 @@ export default function Home() {
                       Get paid
                     </h3>
                     <ul className="space-y-1">
-                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '14px', lineHeight: '18px' }}>
+                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '16px', lineHeight: '20px' }}>
                         <svg className="w-3 h-3 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
                         Track product sales and ad earnings in one dashboard.
                       </li>
-                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '14px', lineHeight: '18px' }}>
+                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '16px', lineHeight: '20px' }}>
                         <svg className="w-3 h-3 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
@@ -551,56 +545,89 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="px-6 py-16 lg:px-12 lg:py-24 bg-purple-50">
+      <section className="px-6 py-16 lg:px-12 lg:py-24" style={{ background: 'linear-gradient(135deg, rgba(188, 178, 255, 0.3) 0%, rgba(188, 178, 255, 0.1) 100%)' }}>
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl lg:text-4xl font-bold text-center text-black mb-16">
+          <h2 className="text-3xl lg:text-4xl font-bold text-center text-black mb-24">
             What creators say
           </h2>
           <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <div className="bg-white p-6 rounded-xl shadow-sm text-center">
-              <div className="w-16 h-16 rounded-full mx-auto mb-4 overflow-hidden">
+            <div className="bg-white px-6 pt-6 pb-12 rounded-xl shadow-sm relative min-h-[300px]">
+              <div className="w-40 h-40 rounded-full mx-auto mb-4 overflow-hidden -mt-20 relative z-10">
                 <Image
                   src="/Ellipse 1.png"
                   alt="Maya R. profile picture"
-                  width={64}
-                  height={64}
+                  width={160}
+                  height={160}
                   className="w-full h-full object-cover"
                 />
               </div>
-              <p className="text-gray-700 mb-4 italic">
-                "I launched a mini course and turned on brand placements in one afternoon. Two new revenue streams, one link."
+              <p className="text-black mb-4 italic text-left max-w-[75%]">
+                "I launched a mini course and turned on brand placements in the same afternoon. Two new revenue streams, one link."
               </p>
-              <p className="font-semibold text-black">Maya R., Fitness Coach (@mayamoves)</p>
+              <p className="text-black text-left max-w-[75%]">
+                - <span className="font-bold">Maya R.</span>, Fitness Coach (@mayamoves)
+              </p>
+              <div className="absolute -bottom-2 right-8 w-[85px] h-[50px] opacity-100 z-50">
+                <Image
+                  src="/Path 21881.svg"
+                  alt="Quotation mark"
+                  width={85}
+                  height={50}
+                  className="w-full h-full object-contain"
+                />
+              </div>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-sm text-center">
-              <div className="w-16 h-16 rounded-full mx-auto mb-4 overflow-hidden">
+            <div className="bg-white px-6 pt-6 pb-12 rounded-xl shadow-sm relative min-h-[300px]">
+              <div className="w-40 h-40 rounded-full mx-auto mb-4 overflow-hidden -mt-20 relative z-10">
                 <Image
                   src="/Ellipse 2.png"
                   alt="Will K. profile picture"
-                  width={64}
-                  height={64}
+                  width={160}
+                  height={160}
                   className="w-full h-full object-cover"
                 />
               </div>
-              <p className="text-gray-700 mb-4 italic">
+              <p className="text-black mb-4 italic text-left max-w-[75%]">
                 "The ad controls are clutch. I pick categories that match my audience and it just works."
               </p>
-              <p className="font-semibold text-black">Will K., Productivity Creator (@willfocus)</p>
+              <p className="text-black text-left max-w-[75%]">
+                - <span className="font-bold">Will K.</span>, Productivity Creator (@wkfocus)
+              </p>
+              <div className="absolute -bottom-2 right-8 w-[85px] h-[50px] opacity-100 z-50">
+                <Image
+                  src="/Path 21881.svg"
+                  alt="Quotation mark"
+                  width={85}
+                  height={50}
+                  className="w-full h-full object-contain"
+                />
+              </div>
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-sm text-center">
-              <div className="w-16 h-16 rounded-full mx-auto mb-4 overflow-hidden">
+            <div className="bg-white px-6 pt-6 pb-12 rounded-xl shadow-sm relative min-h-[300px]">
+              <div className="w-40 h-40 rounded-full mx-auto mb-4 overflow-hidden -mt-20 relative z-10">
                 <Image
                   src="/Ellipse 3.png"
                   alt="Jane L. profile picture"
-                  width={64}
-                  height={64}
+                  width={160}
+                  height={160}
                   className="w-full h-full object-cover"
                 />
               </div>
-              <p className="text-gray-700 mb-4 italic">
+              <p className="text-black mb-4 italic text-left max-w-[75%]">
                 "Set up was ridiculously fast. My audience gets a clean shop, I get sales + ad income. Win-win!"
               </p>
-              <p className="font-semibold text-black">Jane L., Design Educator (@janelearns)</p>
+              <p className="text-black text-left max-w-[75%]">
+                - <span className="font-bold">Jane L.</span>, Design Educator (@janelearns)
+              </p>
+              <div className="absolute -bottom-2 right-8 w-[85px] h-[50px] opacity-100 z-50">
+                <Image
+                  src="/Path 21881.svg"
+                  alt="Quotation mark"
+                  width={85}
+                  height={50}
+                  className="w-full h-full object-contain"
+                />
+              </div>
             </div>
           </div>
           <div className="text-center">
@@ -615,17 +642,17 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="px-6 py-16 lg:px-12 lg:py-24 bg-purple-900">
+      <section className="px-6 py-0 pb-[50px] lg:px-12 lg:py-0" style={{ backgroundColor: '#6B42F0' }}>
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
-              <div className="w-full h-96 rounded-2xl flex items-center justify-center">
+              <div className="w-full h-full rounded-2xl flex items-center justify-center py-0 my-0">
                 <Image
                   src="/Mask Group 8.png"
                   alt="Woman with smartphone looking confused"
-                  width={400}
-                  height={400}
-                  className="w-full h-full object-cover rounded-2xl"
+                  width={800}
+                  height={800}
+                  className="w-full h-full object-contain rounded-2xl"
                 />
               </div>
             </div>
@@ -633,22 +660,22 @@ export default function Home() {
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-8">
                 FAQs
               </h2>
-              <div className="space-y-6">
+              <div className="space-y-6 max-w-md">
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-2">Do I need to code?</h3>
-                  <p className="text-purple-200">
+                  <h3 className="text-white mb-3" style={{ fontFamily: 'Poppins', fontWeight: 'bold', fontSize: '20px', lineHeight: '30px', letterSpacing: '0px', opacity: 1 }}>Do I need to code?</h3>
+                  <p className="text-white" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '20px', lineHeight: '30px', letterSpacing: '0px', opacity: 1 }}>
                     No. Use the visual editor to add products, customize your page, and manage ad settings.
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-2">Are the ads intrusive?</h3>
-                  <p className="text-purple-200">
+                  <h3 className="text-white mb-3" style={{ fontFamily: 'Poppins', fontWeight: 'bold', fontSize: '20px', lineHeight: '30px', letterSpacing: '0px', opacity: 1 }}>Are the ads intrusive?</h3>
+                  <p className="text-white" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '20px', lineHeight: '30px', letterSpacing: '0px', opacity: 1 }}>
                     No pop-ups or takeover ads. Only tasteful, native placements you opt into and control.
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-white mb-2">Can I choose which brands appear?</h3>
-                  <p className="text-purple-200">
+                  <h3 className="text-white mb-3" style={{ fontFamily: 'Poppins', fontWeight: 'bold', fontSize: '20px', lineHeight: '30px', letterSpacing: '0px', opacity: 1 }}>Can I choose which brands appear?</h3>
+                  <p className="text-white" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '20px', lineHeight: '30px', letterSpacing: '0px', opacity: 1 }}>
                     You can approve categories and disable any specific placement. Your page, your rules.
                   </p>
                 </div>
@@ -658,12 +685,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="px-6 py-8 lg:px-12">
-        <div className="max-w-7xl mx-auto text-center">
-          <p className="text-gray-500 text-sm">© LinkHaus 2023</p>
-        </div>
-      </footer>
     </div>
   );
 }
