@@ -90,7 +90,7 @@ export default function ThankYou() {
       </section>
 
       {/* Notification Signup Section */}
-      <section className="px-6 py-16 lg:px-12 lg:py-24" style={{ backgroundColor: '#D4EB04' }}>
+      <section className="px-6 lg:px-12" style={{ backgroundColor: '#D4EB04' }}>
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left side - Text and form */}
@@ -143,14 +143,14 @@ export default function ThankYou() {
             </div>
 
             {/* Right side - Woman with smartphone image */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="relative">
+            <div className="flex justify-center lg:justify-end h-full">
+              <div className="relative h-full w-full">
                 <Image
-                  src="/hero-phone.png"
+                  src="/Mask Group 9.png"
                   alt="Woman with smartphone looking amazed"
-                  width={400}
-                  height={500}
-                  className="w-full h-auto max-w-md"
+                  width={600}
+                  height={800}
+                  className="w-full h-full object-contain max-w-2xl"
                   priority
                   unoptimized
                 />
