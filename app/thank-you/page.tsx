@@ -96,7 +96,7 @@ export default function ThankYou() {
             {/* Left side - Text and form */}
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold text-black mb-6">
-                Get notified when we go live and get a 12 months free trial!
+                Get notified when we go live and get 12 months free trial!
               </h2>
 
               {isSubmitted ? (
