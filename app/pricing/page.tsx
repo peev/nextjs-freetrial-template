@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Image from "next/image";
 import Link from "next/link";
+import { trackButtonClick } from "../utils/analytics";
 
 export default function Pricing() {
   const [isAnnual, setIsAnnual] = useState(true);
@@ -106,7 +107,10 @@ export default function Pricing() {
           />
         </Link>
         <Link href="/thank-you">
-          <button className="bg-purple-600 text-white px-6 py-2 rounded-full font-medium hover:bg-purple-700 transition-colors">
+          <button 
+            className="bg-purple-600 text-white px-6 py-2 rounded-full font-medium hover:bg-purple-700 transition-colors"
+            onClick={() => trackButtonClick('sign_up_header', 'pricing_page')}
+          >
             SIGN UP
           </button>
         </Link>
@@ -139,7 +143,10 @@ export default function Pricing() {
           <div className="flex justify-center mb-16">
             <div className="bg-gray-100 rounded-lg p-1 flex">
               <button
-                onClick={() => setIsAnnual(false)}
+                onClick={() => {
+                  setIsAnnual(false);
+                  trackButtonClick('billing_toggle_monthly', 'pricing_page');
+                }}
                 className={`px-6 py-2 rounded-md font-medium transition-colors cursor-pointer ${
                   !isAnnual
                     ? 'bg-white text-gray-900 shadow-sm'
@@ -149,7 +156,10 @@ export default function Pricing() {
                 MONTHLY
               </button>
               <button
-                onClick={() => setIsAnnual(true)}
+                onClick={() => {
+                  setIsAnnual(true);
+                  trackButtonClick('billing_toggle_annually', 'pricing_page');
+                }}
                 className={`px-6 py-2 rounded-md font-medium transition-colors ${
                   isAnnual
                     ? 'bg-purple-600 text-white shadow-sm'
@@ -195,6 +205,7 @@ export default function Pricing() {
                         ? 'bg-purple-700 hover:bg-purple-800'
                         : 'bg-purple-600 hover:bg-purple-700'
                     }`}
+                    onClick={() => trackButtonClick(`plan_${plan.name.toLowerCase()}_trial`, 'pricing_cards')}
                   >
                     {plan.buttonText}
                   </button>

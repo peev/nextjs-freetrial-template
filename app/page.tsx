@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { trackButtonClick, trackLinkClick } from "./utils/analytics";
 
 export default function Home() {
   return (
@@ -18,7 +21,10 @@ export default function Home() {
           />
         </div>
         <Link href="/thank-you">
-          <button className="bg-purple-600 text-white px-6 py-2 rounded-full font-medium hover:bg-purple-700 transition-colors">
+          <button 
+            className="bg-purple-600 text-white px-6 py-2 rounded-full font-medium hover:bg-purple-700 transition-colors"
+            onClick={() => trackButtonClick('sign_up_header', 'header')}
+          >
             SIGN UP
           </button>
         </Link>
@@ -47,7 +53,10 @@ export default function Home() {
               LinkHaus lets you sell products, courses, and services—plus earn extra from brand placements you choose. One link. Two revenue streams. Complete control. Zero code.
             </p>
             <Link href="/pricing">
-              <button className="bg-purple-600 text-white px-8 py-4 rounded-full font-medium text-lg hover:bg-purple-700 transition-colors flex items-center gap-2">
+              <button 
+                className="bg-purple-600 text-white px-8 py-4 rounded-full font-medium text-lg hover:bg-purple-700 transition-colors flex items-center gap-2"
+                onClick={() => trackButtonClick('try_now_hero', 'hero_section')}
+              >
                 Try Now
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -267,7 +276,10 @@ export default function Home() {
           </div>
           <div className="text-center">
             <Link href="/pricing">
-              <button className="bg-purple-600 text-white px-8 py-4 rounded-full font-medium text-lg hover:bg-purple-700 transition-colors flex items-center gap-2 mx-auto">
+              <button 
+                className="bg-purple-600 text-white px-8 py-4 rounded-full font-medium text-lg hover:bg-purple-700 transition-colors flex items-center gap-2 mx-auto"
+                onClick={() => trackButtonClick('try_now_benefits', 'benefits_section')}
+              >
                 Try Now
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -624,7 +636,10 @@ export default function Home() {
                 </div>
           <div className="text-center">
             <Link href="/pricing">
-              <button className="bg-purple-600 text-white px-8 py-4 rounded-full font-medium text-lg hover:bg-purple-700 transition-colors flex items-center gap-2 mx-auto">
+              <button 
+                className="bg-purple-600 text-white px-8 py-4 rounded-full font-medium text-lg hover:bg-purple-700 transition-colors flex items-center gap-2 mx-auto"
+                onClick={() => trackButtonClick('try_now_testimonials', 'testimonials_section')}
+              >
                 Try Now
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

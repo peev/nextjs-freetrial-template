@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { trackButtonClick, trackFormSubmit } from "../utils/analytics";
 
 export default function ThankYou() {
   const [email, setEmail] = useState("");
@@ -30,6 +31,7 @@ export default function ThankYou() {
       if (response.ok) {
         setIsSubmitted(true);
         setEmail("");
+        trackFormSubmit('email_signup');
       } else {
         throw new Error("Failed to submit");
       }
@@ -57,7 +59,10 @@ export default function ThankYou() {
           </Link>
         </div>
         <Link href="/pricing">
-          <button className="bg-purple-600 text-white px-6 py-2 rounded-full font-medium hover:bg-purple-700 transition-colors">
+          <button 
+            className="bg-purple-600 text-white px-6 py-2 rounded-full font-medium hover:bg-purple-700 transition-colors"
+            onClick={() => trackButtonClick('sign_up_header', 'thank_you_page')}
+          >
             SIGN UP
           </button>
         </Link>
@@ -117,6 +122,7 @@ export default function ThankYou() {
                       type="submit"
                       disabled={isSubmitting || !email}
                       className="bg-purple-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-purple-700 transition-colors whitespace-nowrap shadow-sm disabled:opacity-50 disabled:cursor-not-allowed"
+                      onClick={() => trackButtonClick('notify_me', 'email_signup_form')}
                     >
                       {isSubmitting ? "SUBMITTING..." : "NOTIFY ME"}
                     </button>
