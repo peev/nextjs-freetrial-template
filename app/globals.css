@@ -31,3 +31,15 @@ button {
   appearance: button;
   cursor: pointer;
 }
+
+/* Email input styling to match the design */
+.email-input {
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.email-input::placeholder {
+  color: #8A6AFB;
+  font-weight: 500;
+}

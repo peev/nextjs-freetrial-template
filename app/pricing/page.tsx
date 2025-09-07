@@ -105,12 +105,11 @@ export default function Pricing() {
             unoptimized
           />
         </Link>
-        <button 
-          className="bg-purple-600 text-white px-6 py-2 rounded-full font-medium hover:bg-purple-700 transition-colors cursor-pointer"
-          onClick={() => window.location.href = '/pricing'}
-        >
-          SIGN UP
-        </button>
+        <Link href="/thank-you">
+          <button className="bg-purple-600 text-white px-6 py-2 rounded-full font-medium hover:bg-purple-700 transition-colors">
+            SIGN UP
+          </button>
+        </Link>
       </header>
 
       {/* Main Content */}
@@ -189,15 +188,17 @@ export default function Pricing() {
                   <p className="text-gray-600 text-sm">{plan.description}</p>
                 </div>
 
-                <button
-                  className={`w-full py-3 px-6 rounded-lg font-medium text-white transition-colors mb-6 cursor-pointer ${
-                    plan.highlighted
-                      ? 'bg-purple-700 hover:bg-purple-800'
-                      : 'bg-purple-600 hover:bg-purple-700'
-                  }`}
-                >
-                  {plan.buttonText}
-                </button>
+                <Link href="/thank-you">
+                  <button
+                    className={`w-full py-3 px-6 rounded-lg font-medium text-white transition-colors mb-6 cursor-pointer ${
+                      plan.highlighted
+                        ? 'bg-purple-700 hover:bg-purple-800'
+                        : 'bg-purple-600 hover:bg-purple-700'
+                    }`}
+                  >
+                    {plan.buttonText}
+                  </button>
+                </Link>
 
                 <ul className="space-y-3">
                   {plan.features.map((feature, featureIndex) => (
