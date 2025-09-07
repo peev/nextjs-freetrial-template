@@ -26,19 +26,32 @@ export default function Home() {
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-4xl lg:text-6xl font-bold text-black mb-6 leading-tight">
-              Turn your link-in-bio into a shop and a brand ad channel with LinkHaus
+              Turn your link-in-bio into your own shop and trusted brand ad channel
             </h1>
+            {/* Mobile image - shown only on mobile */}
+            <div className="relative mb-6 lg:hidden">
+              <Image
+                src="/hero-phone-old.png"
+                alt="Woman with smartphone showing social media engagement"
+                width={320}
+                height={256}
+                className="w-full h-auto"
+                priority
+                unoptimized
+              />
+            </div>
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              Sell your content, courses, and sessions — and earn from curated brand placements you control. One link. Two revenue streams. Zero code.
+              LinkHaus lets you sell products, courses, and services—plus earn extra from brand placements you choose. One link. Two revenue streams. Complete control. Zero code.
             </p>
             <button className="bg-purple-600 text-white px-8 py-4 rounded-full font-medium text-lg hover:bg-purple-700 transition-colors flex items-center gap-2">
-              PURCHASE SUBSCRIPTION
+              Try Now
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </button>
           </div>
-          <div className="relative">
+          {/* Desktop image - hidden on mobile */}
+          <div className="relative hidden lg:block">
             <Image
               src="/hero-phone-old.png"
               alt="Woman with smartphone showing social media engagement"
@@ -112,8 +125,8 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-black mb-6">Control the experience</h3>
                 <p className="text-black font-poppins font-light text-xl leading-6 mb-10 lg:mb-0" style={{ fontWeight: 300, fontSize: '20px', lineHeight: '25px' }}>
                   Pick ad categories, placements, and frequency. No pop-ups, no spam. Your brand, your rules.
-                </p>
-              </div>
+            </p>
+          </div>
             </div>
           </div>
         </div>
@@ -249,13 +262,13 @@ export default function Home() {
           </div>
           <div className="text-center">
             <button className="bg-purple-600 text-white px-8 py-4 rounded-full font-medium text-lg hover:bg-purple-700 transition-colors flex items-center gap-2 mx-auto">
-              PURCHASE SUBSCRIPTION
+              Try Now
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
-            </button>
+              </button>
+            </div>
           </div>
-        </div>
       </section>
 
       {/* How it works Section */}
@@ -264,25 +277,18 @@ export default function Home() {
           <h2 className="text-3xl lg:text-4xl font-bold text-center text-black mb-20" style={{ fontFamily: 'Poppins' }}>
             How it works
           </h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-8 max-w-6xl mx-auto">
             {/* Build your shop - Top Left */}
-            <div className="relative">
+            <div className="relative mb-3 sm:mb-0">
               <div 
                 className="relative overflow-hidden w-full max-w-2xl mx-auto lg:mx-0"
                 style={{
-                  height: '285px',
+                  height: 'auto',
+                  minHeight: '280px',
                   opacity: 1
                 }}
               >
-                <Image
-                  src="/Group 29541-no-shadow.svg"
-                  alt="Build your shop background"
-                  fill
-                  className="object-cover"
-                  unoptimized
-                  priority
-                />
-                <div className="flex items-center h-full p-6 relative z-20 border-r-8 border-b-8" style={{ borderColor: '#BCB2FD' }}>
+                <div className="flex items-center h-full p-4 sm:p-6 relative z-20 border-r-8 border-b-8" style={{ borderColor: '#BCB2FD' }}>
                   <div className="w-1/2 pr-2">
                     <Image
                       src="/Rectangle 2868@2x.png"
@@ -292,75 +298,68 @@ export default function Home() {
                       className="object-cover rounded-lg"
                       quality={90}
                     />
-                  </div>
+              </div>
                   <div className="w-1/2 pl-2">
                     <h3 
                       className="font-bold text-black mb-3"
                       style={{
                         fontFamily: 'Poppins',
                         fontWeight: 'bold',
-                        fontSize: '18px',
-                        lineHeight: '20px',
+                        fontSize: '16px',
+                        lineHeight: '18px',
                         letterSpacing: '0px'
                       }}
                     >
                       Build your shop
                     </h3>
                     <ul className="space-y-1">
-                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '16px', lineHeight: '20px' }}>
+                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '14px', lineHeight: '18px' }}>
                         <svg className="w-3 h-3 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
                         Add digital downloads, courses, memberships, or coaching.
-                      </li>
-                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '16px', lineHeight: '20px' }}>
+                </li>
+                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '14px', lineHeight: '18px' }}>
                         <svg className="w-3 h-3 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
                         Customize your page with a visual editor.
-                      </li>
-                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '16px', lineHeight: '20px' }}>
+                </li>
+                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '14px', lineHeight: '18px' }}>
                         <svg className="w-3 h-3 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
                         Host files and gated content.
-                      </li>
-                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '16px', lineHeight: '20px' }}>
+                </li>
+                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '14px', lineHeight: '18px' }}>
                         <svg className="w-3 h-3 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
                         Built-in checkout & payouts.
-                      </li>
-                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '16px', lineHeight: '20px' }}>
+                </li>
+                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '14px', lineHeight: '18px' }}>
                         <svg className="w-3 h-3 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
                         Mobile-first, lightning-fast pages.
-                      </li>
-                    </ul>
+                </li>
+              </ul>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Enable brand placements */}
-            <div className="relative lg:ml-auto">
+            <div className="relative lg:ml-auto mb-3 sm:mb-0">
               <div 
                 className="relative overflow-hidden w-full max-w-2xl mx-auto lg:mx-0"
                 style={{
-                  height: '285px',
+                  height: 'auto',
+                  minHeight: '280px',
                   opacity: 1
                 }}
               >
-                <Image
-                  src="/Group 29542-no-shadow.svg"
-                  alt="Enable brand placements background"
-                  fill
-                  className="object-cover"
-                  unoptimized
-                  priority
-                />
-                <div className="flex items-center h-full p-6 relative z-20 border-r-8 border-b-8" style={{ borderColor: '#6B42F0' }}>
+                <div className="flex items-center h-full p-4 sm:p-6 relative z-20 border-r-8 border-b-8" style={{ borderColor: '#6B42F0' }}>
                   <div className="w-1/2 pr-2">
                     <Image
                       src="/Rectangle 2869@2x.png"
@@ -370,75 +369,68 @@ export default function Home() {
                       className="object-cover rounded-lg"
                       quality={90}
                     />
-                  </div>
+              </div>
                   <div className="w-1/2 pl-2">
                     <h3 
                       className="font-bold text-black mb-3"
                       style={{
                         fontFamily: 'Poppins',
                         fontWeight: 'bold',
-                        fontSize: '18px',
-                        lineHeight: '20px',
+                        fontSize: '16px',
+                        lineHeight: '18px',
                         letterSpacing: '0px'
                       }}
                     >
                       Enable brand placements
                     </h3>
                     <ul className="space-y-1">
-                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '16px', lineHeight: '20px' }}>
+                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '14px', lineHeight: '18px' }}>
                         <svg className="w-3 h-3 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
                         Opt in to tasteful, native ad slots.
-                      </li>
-                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '16px', lineHeight: '20px' }}>
+                </li>
+                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '14px', lineHeight: '18px' }}>
                         <svg className="w-3 h-3 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
                         Choose categories that fit your audience and set your preferences.
-                      </li>
-                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '16px', lineHeight: '20px' }}>
+                </li>
+                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '14px', lineHeight: '18px' }}>
                         <svg className="w-3 h-3 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
                         Category and brand controls.
-                      </li>
-                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '16px', lineHeight: '20px' }}>
+                </li>
+                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '14px', lineHeight: '18px' }}>
                         <svg className="w-3 h-3 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
                         Fixed or revenue-share models.
-                      </li>
-                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '16px', lineHeight: '20px' }}>
+                </li>
+                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '14px', lineHeight: '18px' }}>
                         <svg className="w-3 h-3 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
                         Privacy-safe, no invasive pop-ups.
-                      </li>
-                    </ul>
+                </li>
+              </ul>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Share one link - Bottom Left */}
-            <div className="relative">
+            <div className="relative mb-3 sm:mb-0">
               <div 
                 className="relative overflow-hidden w-full max-w-2xl mx-auto lg:mx-0"
                 style={{
-                  height: '285px',
+                  height: 'auto',
+                  minHeight: '280px',
                   opacity: 1
                 }}
               >
-                <Image
-                  src="/Group 29543-no-shadow.svg"
-                  alt="Share one link background"
-                  fill
-                  className="object-cover"
-                  unoptimized
-                  priority
-                />
-                <div className="flex items-center h-full p-6 relative z-20 border-r-8 border-b-8" style={{ borderColor: '#D4EB31' }}>
+                <div className="flex items-center h-full p-4 sm:p-6 relative z-20 border-r-8 border-b-8" style={{ borderColor: '#D4EB31' }}>
                   <div className="w-1/2 pr-2">
                     <Image
                       src="/Rectangle 2870@2x.png"
@@ -448,33 +440,33 @@ export default function Home() {
                       className="object-cover rounded-lg"
                       quality={90}
                     />
-                  </div>
+              </div>
                   <div className="w-1/2 pl-2">
                     <h3 
                       className="font-bold text-black mb-3"
                       style={{
                         fontFamily: 'Poppins',
                         fontWeight: 'bold',
-                        fontSize: '18px',
-                        lineHeight: '20px',
+                        fontSize: '16px',
+                        lineHeight: '18px',
                         letterSpacing: '0px'
                       }}
                     >
                       Share one link
                     </h3>
                     <ul className="space-y-1">
-                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '16px', lineHeight: '20px' }}>
+                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '14px', lineHeight: '18px' }}>
                         <svg className="w-3 h-3 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
                         Use it in your bio and everywhere else.
-                      </li>
-                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '16px', lineHeight: '20px' }}>
+                </li>
+                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '14px', lineHeight: '18px' }}>
                         <svg className="w-3 h-3 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
                         Optimized for Instagram, TikTok, YouTube, X, and more.
-                      </li>
+                </li>
                     </ul>
                   </div>
                 </div>
@@ -482,23 +474,16 @@ export default function Home() {
             </div>
 
             {/* Get paid */}
-            <div className="relative lg:ml-auto">
+            <div className="relative lg:ml-auto mb-3 sm:mb-0">
               <div 
                 className="relative overflow-hidden w-full max-w-2xl mx-auto lg:mx-0"
                 style={{
-                  height: '285px',
+                  height: 'auto',
+                  minHeight: '280px',
                   opacity: 1
                 }}
               >
-                <Image
-                  src="/Group 29544-no-shadow.svg"
-                  alt="Get paid background"
-                  fill
-                  className="object-cover"
-                  unoptimized
-                  priority
-                />
-                <div className="flex items-center h-full p-6 relative z-20 border-r-8 border-b-8" style={{ borderColor: '#F2F9B4' }}>
+                <div className="flex items-center h-full p-4 sm:p-6 relative z-20 border-r-8 border-b-8" style={{ borderColor: '#F2F9B4' }}>
                   <div className="w-1/2 pr-2">
                     <Image
                       src="/Rectangle 2871@2x.png"
@@ -515,29 +500,29 @@ export default function Home() {
                       style={{
                         fontFamily: 'Poppins',
                         fontWeight: 'bold',
-                        fontSize: '18px',
-                        lineHeight: '20px',
+                        fontSize: '16px',
+                        lineHeight: '18px',
                         letterSpacing: '0px'
                       }}
                     >
                       Get paid
                     </h3>
                     <ul className="space-y-1">
-                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '16px', lineHeight: '20px' }}>
+                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '14px', lineHeight: '18px' }}>
                         <svg className="w-3 h-3 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
                         Track product sales and ad earnings in one dashboard.
-                      </li>
-                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '16px', lineHeight: '20px' }}>
+                </li>
+                      <li className="flex items-start text-black text-sm" style={{ fontFamily: 'Poppins', fontWeight: 300, fontSize: '14px', lineHeight: '18px' }}>
                         <svg className="w-3 h-3 text-purple-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
                         Cash out quickly to your bank.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+                </li>
+              </ul>
+            </div>
+          </div>
               </div>
             </div>
           </div>
@@ -629,16 +614,16 @@ export default function Home() {
                 />
               </div>
             </div>
-          </div>
+                </div>
           <div className="text-center">
             <button className="bg-purple-600 text-white px-8 py-4 rounded-full font-medium text-lg hover:bg-purple-700 transition-colors flex items-center gap-2 mx-auto">
-              PURCHASE SUBSCRIPTION
+              Try Now
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
+                  </svg>
             </button>
-          </div>
-        </div>
+                </div>
+                </div>
       </section>
 
       {/* FAQ Section */}
@@ -654,8 +639,8 @@ export default function Home() {
                   height={800}
                   className="w-full h-full object-contain rounded-2xl"
                 />
+                </div>
               </div>
-            </div>
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-8">
                 FAQs
