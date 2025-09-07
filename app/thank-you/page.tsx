@@ -90,7 +90,7 @@ export default function ThankYou() {
       </section>
 
       {/* Notification Signup Section */}
-      <section className="px-6 lg:px-12" style={{ backgroundColor: '#D4EB04' }}>
+      <section className="px-6 pt-8 lg:px-12 lg:pt-0" style={{ backgroundColor: '#D4EB04' }}>
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left side - Text and form */}
