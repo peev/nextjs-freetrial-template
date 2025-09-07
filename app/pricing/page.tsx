@@ -7,7 +7,7 @@ import { trackButtonClick } from "../utils/analytics";
 
 export default function Pricing() {
   const [isAnnual, setIsAnnual] = useState(true);
-  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0 });
+  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
     const calculateTimeLeft = () => {
@@ -19,10 +19,12 @@ export default function Pricing() {
       if (difference > 0) {
         const days = Math.floor(difference / (1000 * 60 * 60 * 24));
         const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((difference % (1000 * 60)) / 1000);
         
-        setTimeLeft({ days, hours });
+        setTimeLeft({ days, hours, minutes, seconds });
       } else {
-        setTimeLeft({ days: 0, hours: 0 });
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
       }
     };
 
@@ -94,26 +96,30 @@ export default function Pricing() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="flex justify-between items-center px-6 py-4 lg:px-12 border-b border-gray-200">
-        <Link href="/" className="flex items-center">
-          <Image
-            src="/Group 29504@2x.png"
-            alt="LinkHaus Logo"
-            width={286}
-            height={60}
-            className="h-8 w-auto"
-            priority
-            unoptimized
-          />
-        </Link>
-        <Link href="/thank-you">
-          <button 
-            className="bg-purple-600 text-white px-6 py-2 rounded-full font-medium hover:bg-purple-700 transition-colors"
-            onClick={() => trackButtonClick('sign_up_header', 'pricing_page')}
-          >
-            SIGN UP
-          </button>
-        </Link>
+      <header className="px-6 py-4 lg:px-12 border-b border-gray-200">
+        <div className="max-w-4xl mx-auto flex justify-between items-center">
+          <div className="flex items-center">
+            <Link href="/">
+              <Image
+                src="/Group 29504@2x.png"
+                alt="LinkHaus Logo"
+                width={286}
+                height={60}
+                className="h-8 w-auto cursor-pointer hover:opacity-80 transition-opacity"
+                priority
+                unoptimized
+              />
+            </Link>
+          </div>
+          <Link href="/thank-you">
+            <button 
+              className="bg-purple-600 text-white px-6 py-2 rounded-full font-medium hover:bg-purple-700 transition-colors"
+              onClick={() => trackButtonClick('sign_up_header', 'pricing_page')}
+            >
+              SIGN UP
+            </button>
+          </Link>
+        </div>
       </header>
 
       {/* Main Content */}
@@ -133,7 +139,7 @@ export default function Pricing() {
               <div className="text-black px-6 py-3 rounded-lg inline-block" style={{ backgroundColor: '#D4EB31' }}>
                 <div className="text-sm font-medium mb-1">OFFER ENDS IN:</div>
                 <div className="text-2xl font-bold">
-                  {timeLeft.days}d {timeLeft.hours.toString().padStart(2, '0')}h
+                  {timeLeft.days}d {timeLeft.hours.toString().padStart(2, '0')}h {(timeLeft.minutes || 0).toString().padStart(2, '0')}m {(timeLeft.seconds || 0).toString().padStart(2, '0')}s
                 </div>
               </div>
             </div>

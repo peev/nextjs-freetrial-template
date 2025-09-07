@@ -44,28 +44,30 @@ export default function ThankYou() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="flex justify-between items-center px-6 py-4 lg:px-12 border-b border-gray-200">
-        <div className="flex items-center">
-          <Link href="/">
-            <Image
-              src="/Group 29504@2x.png"
-              alt="LinkHaus Logo"
-              width={286}
-              height={60}
-              className="h-8 w-auto cursor-pointer hover:opacity-80 transition-opacity"
-              priority
-              unoptimized
-            />
+      <header className="px-6 py-4 lg:px-12 border-b border-gray-200">
+        <div className="max-w-4xl mx-auto flex justify-between items-center">
+          <div className="flex items-center">
+            <Link href="/">
+              <Image
+                src="/Group 29504@2x.png"
+                alt="LinkHaus Logo"
+                width={286}
+                height={60}
+                className="h-8 w-auto cursor-pointer hover:opacity-80 transition-opacity"
+                priority
+                unoptimized
+              />
+            </Link>
+          </div>
+          <Link href="/pricing">
+            <button 
+              className="bg-purple-600 text-white px-6 py-2 rounded-full font-medium hover:bg-purple-700 transition-colors"
+              onClick={() => trackButtonClick('sign_up_header', 'thank_you_page')}
+            >
+              SIGN UP
+            </button>
           </Link>
         </div>
-        <Link href="/pricing">
-          <button 
-            className="bg-purple-600 text-white px-6 py-2 rounded-full font-medium hover:bg-purple-700 transition-colors"
-            onClick={() => trackButtonClick('sign_up_header', 'thank_you_page')}
-          >
-            SIGN UP
-          </button>
-        </Link>
       </header>
 
       {/* Thank You Section */}
@@ -81,7 +83,7 @@ export default function ThankYou() {
             {/* Decorative diamond shape */}
             <div className="absolute -top-4 -right-4 w-32 h-32 bg-purple-200 opacity-30 transform rotate-45 -z-10"></div>
           </div>
-          <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-gray-700 leading-relaxed">
             We're currently in private beta and onboarding a small group of creators to refine the experience before opening access more broadly.
           </p>
         </div>
