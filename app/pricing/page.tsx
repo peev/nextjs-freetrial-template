@@ -1,4 +1,4 @@
-'use client';
+'use client'; // Force Vercel deployment
 
 import { useState, useEffect } from 'react';
 import Image from "next/image";
