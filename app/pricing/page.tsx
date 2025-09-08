@@ -211,6 +211,7 @@ export default function Pricing() {
                         ? 'bg-purple-700 hover:bg-purple-800'
                         : 'bg-purple-600 hover:bg-purple-700'
                     }`}
+                    data-plan={plan.name === 'Starter' ? 'basic' : plan.name === 'Creator' ? 'star' : 'agency'}
                     onClick={() => trackButtonClick(`plan_${plan.name.toLowerCase()}_trial`, 'pricing_cards')}
                   >
                     {plan.buttonText}
